@@ -1,0 +1,22 @@
+<head>
+    <title>CK demo page</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="user-info-top">
+            <div class="button" style="float: right; display:inline-block;">
+                {{loginButtons align="right"}}
+            </div>
+        </div>
+        <div id="header">
+            <h1 id="ck-title">CK demo page</h1>
+        </div>
+
+        <div id="content">
+            {{>sidebar}}
+            {{>content}}
+        </div>
+    </div>
+</body>
+

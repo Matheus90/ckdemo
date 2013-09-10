@@ -1,0 +1,8 @@
+<template name="sidebar">
+    <div id="sidebar">
+        <div class="menu-item" data-page="page_home" onclick="javascript: App.loadPage($(this).data('page'));">Home</div>
+        {{#if currentUser}}
+            <div class="menu-item" data-page="page_locations" onclick="javascript: App.loadPage($(this).data('page'));">My Locations</div>
+        {{/if}}
+    </div>
+</template>

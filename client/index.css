@@ -1,0 +1,100 @@
+/* CSS declarations go here */
+body {
+    font-family: Arial, helvetica;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color:#e0e0e0;
+    background-repeat:repeat-x;
+    background-image:-khtml-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e0e0e0));
+    background-image:-moz-linear-gradient(top, #f6f6f6, #e0e0e0);
+    background-image:-ms-linear-gradient(top, #f6f6f6, #e0e0e0);
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100%, #e0e0e0));
+    background-image:-webkit-linear-gradient(top, #f6f6f6, #e0e0e0);
+    background-image:-o-linear-gradient(top, #f6f6f6, #e0e0e0);
+    background-image:linear-gradient(top, #f6f6f6, #e0e0e0);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#e0e0e0', GradientType=0);
+}
+
+#page {
+    display: block;
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+    z-index: 98;
+}
+
+#user-info-top {
+    padding: 10px 5px 5px 5px;
+    height: 22px;
+}
+
+#user-info-top .button {
+    height: 26px;
+}
+
+#ck-title {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+#header {
+    position: relative;
+    height: 100px;
+    line-height:100px;
+    background-color: dodgerblue;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0 -5px;
+    z-index: 99;
+    box-shadow: 0px 0px 8px 0px Grey;
+    -moz-box-shadow: 0px 0px 8px 0px Grey;
+    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+}
+
+#sidebar {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    width: 190px;
+    height: 100%;
+    margin-left: 3px;
+    box-shadow: 0px 0px 8px 0px Grey;
+    -moz-box-shadow: 0px 0px 8px 0px Grey;
+    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+    z-index: 98;
+}
+
+#content-main {
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+    width: 800px;
+    background-color: white;
+    min-height: 500px;
+    padding:10px 5px 10px 20px;
+    margin-left: -13px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 8px 0px Grey;
+    -moz-box-shadow: 0px 0px 8px 0px Grey;
+    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+    z-index: 97;
+}
+
+#sidebar .menu-item {
+    font-size: 16px;
+    height: 26px;
+    line-height: 26px;
+    padding: 5px 5px 5px 15px;
+    border-bottom: 1px dashed LightGrey;
+}
+#sidebar .menu-item:last-child {
+    border-bottom: 0;
+}
+#sidebar .menu-item:hover {
+    background-color: #EEE;
+    cursor: pointer;
+}
