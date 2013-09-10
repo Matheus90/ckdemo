@@ -1,0 +1,22 @@
+
+<template name="products">
+
+    <h2>Kegerator sizes:</h2>
+
+    {{#each availableSizes}}
+        <div class="product-item">
+            <div class="product-image"></div>
+            <div class="product-details">{{name}}</div>
+        </div>
+    {{/each}}
+
+
+    <h2>Flavors:</h2>
+
+    {{#each availableFlavors}}
+    <div class="product-item">
+        <div class="product-image"></div>
+        <div class="product-details">{{name}}</div>
+    </div>
+    {{/each}}
+</template>

@@ -1,8 +1,14 @@
 
 Meteor.startup(function () {
-    if( !Session.get("page") )
-        Session.set("page", App.homePage);
+    Session.setDefault('page', App.homePage);
 });
+
+
+Meteor.subscribe("locations");
+
+Locations = new Meteor.Collection('locations');
+Products = new Meteor.Collection('products');
+
 
 App = (function(){
     var homePage = 'page_home';
@@ -22,9 +28,8 @@ App = (function(){
         prevPage: prevPage,
     }
 })();
-
-
 window.App = App;
+
 
 Template.content.htmlContent = function () {
     var page = Session.get("page");
@@ -34,4 +39,46 @@ Template.content.htmlContent = function () {
     return Template[page]();
 };
 
+Template.locations.events({
+    'click #addLocationButton' : function (event) {
+        var location = {
+            name:       $('#location-name').val(),
+            address:    $('#location-address').val(),
+            user_id:    Meteor.userId(),
+            timestamp:  (new Date()).getTime(),
+        };
+        Locations.insert(location);
+    },
+    'click .delete-btn' : function (event) {
+        if( confirm('Are you sure you want to delete this location?', "Yes, I'm sure", "No, cancel") )
+            Locations.remove(this._id);
+    },
+});
 
+Template.locations.locations = function () {
+    // Determine which todos to display in main pane,
+    // selected based on list_id and tag_filter.
+
+    return Locations.find({user_id: Meteor.userId()}, {sort: {name: 1}});
+};
+
+Template.products.availableSizes = function () {
+    // Determine which todos to display in main pane,
+    // selected based on list_id and tag_filter.
+
+    return [
+        {name: '5 Gallon Kegerator'},
+        {name: '10 Gallon Kegerator'},
+        {name: '15 Gallon Kegerator'},
+    ];
+};
+Template.products.availableFlavors = function () {
+    // Determine which todos to display in main pane,
+    // selected based on list_id and tag_filter.
+
+    return [
+        {name: 'Citrus'},
+        {name: 'Ginger'},
+        {name: 'Strawberry'},
+    ];
+};

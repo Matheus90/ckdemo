@@ -46,12 +46,12 @@ body {
     line-height:100px;
     background-color: dodgerblue;
     padding: 10px 0;
-    width: 100%;
-    margin: 0 -5px;
+    width: 1044;
+    margin: 0 -10px;
     z-index: 99;
-    box-shadow: 0px 0px 8px 0px Grey;
-    -moz-box-shadow: 0px 0px 8px 0px Grey;
-    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+    box-shadow: 0px 0px 10px 0px Grey;
+    -moz-box-shadow: 0px 0px 10px 0px Grey;
+    -webkit-box-shadow: 0px 0px 10px 0px Grey;
 }
 
 #sidebar {
@@ -60,11 +60,9 @@ body {
     vertical-align: top;
     background-color: white;
     width: 190px;
-    height: 100%;
-    margin-left: 3px;
-    box-shadow: 0px 0px 8px 0px Grey;
-    -moz-box-shadow: 0px 0px 8px 0px Grey;
-    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+    box-shadow: 0px 0px 10px 0px Grey;
+    -moz-box-shadow: 0px 0px 10px 0px Grey;
+    -webkit-box-shadow: 0px 0px 10px 0px Grey;
     z-index: 98;
 }
 
@@ -72,15 +70,15 @@ body {
     position: relative;
     display:inline-block;
     vertical-align: top;
-    width: 800px;
+    width: 780px;
     background-color: white;
     min-height: 500px;
-    padding:10px 5px 10px 20px;
-    margin-left: -13px;
+    padding:10px 30px 10px 30px;
+    margin-left: -10px;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 8px 0px Grey;
-    -moz-box-shadow: 0px 0px 8px 0px Grey;
-    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+    box-shadow: 0px 0px 10px 0px Grey;
+    -moz-box-shadow: 0px 0px 10px 0px Grey;
+    -webkit-box-shadow: 0px 0px 10px 0px Grey;
     z-index: 97;
 }
 
@@ -97,4 +95,182 @@ body {
 #sidebar .menu-item:hover {
     background-color: #EEE;
     cursor: pointer;
+}
+
+/* ------------ HOME PAGE --------------- */
+.image-text-row {
+    width:100%;
+    position:relative;
+    display: block;
+    margin: 20px 0;
+}
+
+.image-text-row .text-box,
+.image-text-row .image-box {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image-text-row .text-box {
+    width: 490px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px dashed LightGrey;
+}
+
+.image-text-row .image-box {
+    text-align: center;
+    width: 230px;
+    margin: 10px;
+}
+
+/* ------------ LOCATIONS PAGE ------------ */
+table.items {
+    width: 100%;
+    box-shadow: 0px 2px 8px 0px Grey;
+    -moz-box-shadow: 0px 2px 8px 0px Grey;
+    -webkit-box-shadow: 0px 2px 8px 0px Grey;
+}
+
+table.items th {
+    border: 0;
+    background: dodgerblue;
+    color: white;
+}
+
+table.items tbody tr {
+    background: #F0F0F0;
+}
+
+table.items tbody tr {
+    background: #F0F0F0;
+}
+
+#add-location {
+    margin: 40px 20px 20px 20px;
+    /*border: 1px dashed Lightgrey;*/
+    padding: 20px;
+    box-shadow: 0px 0px 8px 0px Grey;
+    -moz-box-shadow: 0px 0px 8px 0px Grey;
+    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+}
+
+table.items-horizontal {
+    width: 100%;
+    font-size: 14px;
+    background: #F6F6F6;
+}
+
+
+table.items-horizontal th {
+    text-align: right;
+    width: 250px;
+    border: 0;
+    background: lightblue;
+    color: black;
+}
+
+table.items-horizontal th,
+table.items-horizontal td {
+    padding: 5px;
+}
+
+table.items-horizontal td input {
+    width: 80%
+}
+
+#addLocationButton {
+    font-size: 14px;
+    position: relative;
+    display: block;
+    padding: 5px 20px;
+    border: 0;
+    margin: 10px auto;
+}
+.customButton {
+    text-shadow: 1px 1px 1px white;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px 0px Grey;
+    -moz-box-shadow: 0px 2px 8px 0px Grey;
+    -webkit-box-shadow: 0px 2px 8px 0px Grey;
+    background-color:#e0e0e0;
+    background-repeat:repeat-x;
+    background-image:-khtml-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e0e0e0));
+    background-image:-moz-linear-gradient(top, #f6f6f6, #e0e0e0);
+    background-image:-ms-linear-gradient(top, #f6f6f6, #e0e0e0);
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100%, #e0e0e0));
+    background-image:-webkit-linear-gradient(top, #f6f6f6, #e0e0e0);
+    background-image:-o-linear-gradient(top, #f6f6f6, #e0e0e0);
+    background-image:linear-gradient(top, #f6f6f6, #e0e0e0);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#e0e0e0', GradientType=0);
+}
+
+.customButton:hover {
+    cursor: pointer;
+    background-color:#F0F0F0;
+    background-repeat:repeat-x;
+    background-image:-khtml-gradient(linear, left top, left bottom, from(#f6f6f6), to(#F0F0F0));
+    background-image:-moz-linear-gradient(top, #f6f6f6, #F0F0F0);
+    background-image:-ms-linear-gradient(top, #f6f6f6, #F0F0F0);
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100%, #F0F0F0));
+    background-image:-webkit-linear-gradient(top, #f6f6f6, #F0F0F0);
+    background-image:-o-linear-gradient(top, #f6f6f6, #F0F0F0);
+    background-image:linear-gradient(top, #f6f6f6, #F0F0F0);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#F0F0F0', GradientType=0);
+}
+
+
+.customButton:active {
+    box-shadow: 0px 1px 6px 0px Grey;
+    -moz-box-shadow: 0px 1px 6px 0px Grey;
+    -webkit-box-shadow: 0px 1px 6px 0px Grey;
+    background-color:#D9D9D9;
+    background-repeat:repeat-x;
+    background-image:-khtml-gradient(linear, left top, left bottom, from(#F0F0F0), to(#D9D9D9));
+    background-image:-moz-linear-gradient(top, #F0F0F0, #D9D9D9);
+    background-image:-ms-linear-gradient(top, #F0F0F0, #D9D9D9);
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0F0F0), color-stop(100%, #D9D9D9));
+    background-image:-webkit-linear-gradient(top, #F0F0F0, #D9D9D9);
+    background-image:-o-linear-gradient(top, #F0F0F0, #D9D9D9);
+    background-image:linear-gradient(top, #F0F0F0, #D9D9D9);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#D9D9D9', GradientType=0);
+}
+
+.delete-btn {
+    display: block;
+    margin: 5px auto;
+    font-size: 20px;
+    width: 25px;
+    height:25px;
+    line-height:25px;
+    text-align: center;
+    border-radius:2px;
+}
+
+/* --------------- PRODUCTS ---------------- */
+.product-item {
+    display: inline-block;
+    width: 202px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px Grey;
+    -moz-box-shadow: 0px 0px 8px 0px Grey;
+    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+}
+
+.product-image {
+    border: 1px solid lightgrey;
+    width: 200px;
+    height: 200px;
+    background-color: #F6F6F6;
+}
+.product-details {
+    margin-top: 10px;
+    width: 200px;
+    min-height: 26px;
+    line-height:26px;
+    text-align: center;
+    border: 1px dashed lightgrey;
+    background-color: #FAFAFA;
 }

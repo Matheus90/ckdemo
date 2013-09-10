@@ -1,0 +1,48 @@
+<template name="locations">
+    <table class="items">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Kegerators</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#if locations array}}
+                {{#each locations}}
+                <tr id="{{id}}">
+                    <td>{{name}}</td>
+                    <td>{{address}}</td>
+                    <td>{{kegerators}}</td>
+                    <td>
+                        <div class="delete-btn customButton" id="{{id}}"> &times; </div>
+                    </td>
+                </tr>
+                {{/each}}
+            {{else}}
+                <tr id="have-no-rows">
+                    <td colspan="4">You have no locations yet.</td>
+                </tr>
+            {{/if}}
+        </tbody>
+    </table>
+
+    <div id="add-location">
+        <h3 style="margin: 0 0 15px 0; padding: 0; text-align: left;">Add location: </h3>
+
+        <table class="items-horizontal" style="margin: 25px auto;">
+            <tr>
+                <th>Name</th>
+                <td><input type="text" id="location-name" /></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><input type="text" id="location-address" /></td>
+            </tr>
+        </table>
+
+        <input type="button" class="customButton" id="addLocationButton" name="addLocation" value="Add"/>
+    </div>
+
+</template>
