@@ -3,10 +3,11 @@
 
     <h2>Kegerator sizes:</h2>
 
-    {{#each availableSizes}}
+    {{#each availableKegerators}}
         <div class="product-item">
+            <div class="product-title">{{name}}</div>
             <div class="product-image"></div>
-            <div class="product-details">{{name}}</div>
+            <div class="product-details">{{{description}}}</div>
         </div>
     {{/each}}
 
@@ -15,8 +16,8 @@
 
     {{#each availableFlavors}}
     <div class="product-item">
+        <div class="product-title">{{name}}</div>
         <div class="product-image"></div>
-        <div class="product-details">{{name}}</div>
     </div>
     {{/each}}
 </template>

@@ -183,11 +183,11 @@ table.items-horizontal td input {
     font-size: 14px;
     position: relative;
     display: block;
-    padding: 5px 20px;
-    border: 0;
     margin: 10px auto;
 }
 .customButton {
+    padding: 5px 20px;
+    border: 0;
     text-shadow: 1px 1px 1px white;
     border-radius: 6px;
     box-shadow: 0px 2px 8px 0px Grey;
@@ -239,6 +239,7 @@ table.items-horizontal td input {
 .delete-btn {
     display: block;
     margin: 5px auto;
+    padding: 0;
     font-size: 20px;
     width: 25px;
     height:25px;
@@ -246,10 +247,20 @@ table.items-horizontal td input {
     text-align: center;
     border-radius:2px;
 }
+.delete-btn:hover{
+    color:red;
+}
+
+.addKegerator {
+    display: block;
+    padding: 5px 20px;
+    margin: 10px auto;
+}
 
 /* --------------- PRODUCTS ---------------- */
 .product-item {
     display: inline-block;
+    vertical-align: top;
     width: 202px;
     margin: 15px;
     padding: 10px;
@@ -258,14 +269,25 @@ table.items-horizontal td input {
     -moz-box-shadow: 0px 0px 8px 0px Grey;
     -webkit-box-shadow: 0px 0px 8px 0px Grey;
 }
-
+.product-title {
+    width: 222px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    margin: -10px -10px 10px -10px;
+    border-bottom: 1px solid lightgrey;
+}
 .product-image {
     border: 1px solid lightgrey;
     width: 200px;
-    height: 200px;
+    height: 150px;
     background-color: #F6F6F6;
 }
 .product-details {
+    font-size: 14px;
     margin-top: 10px;
     width: 200px;
     min-height: 26px;
@@ -273,4 +295,22 @@ table.items-horizontal td input {
     text-align: center;
     border: 1px dashed lightgrey;
     background-color: #FAFAFA;
+}
+
+.white-text-shadow{
+    text-shadow: 1px 1px 1px white;
+}
+
+/* ------------------- PROFILE --------------- */
+#profile-view {
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 0px Grey;
+    -moz-box-shadow: 0px 0px 8px 0px Grey;
+    -webkit-box-shadow: 0px 0px 8px 0px Grey;
+}
+
+#save-profile-btn {
+    display:block;
+    margin: 10px;
 }

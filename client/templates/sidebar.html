@@ -1,9 +1,11 @@
 <template name="sidebar">
     <div id="sidebar">
         <div class="menu-item" data-page="page_home" onclick="javascript: App.loadPage($(this).data('page'));">Home</div>
+        <div class="menu-item" data-page="page_products" onclick="javascript: App.loadPage($(this).data('page'));">Products</div>
         {{#if currentUser}}
             <div class="menu-item" data-page="page_locations" onclick="javascript: App.loadPage($(this).data('page'));">My Locations</div>
+            <div class="menu-item" data-page="page_billing" onclick="javascript: App.loadPage($(this).data('page'));">Billing</div>
+            <div class="menu-item" data-page="page_profile" onclick="javascript: App.loadPage($(this).data('page'));">Profile</div>
         {{/if}}
-        <div class="menu-item" data-page="page_products" onclick="javascript: App.loadPage($(this).data('page'));">Products</div>
     </div>
 </template>

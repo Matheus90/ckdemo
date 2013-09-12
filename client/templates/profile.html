@@ -1,0 +1,43 @@
+
+<template name="profile">
+
+    <table class="items-horizontal">
+        <tbody>
+            <tr>
+                <th>Name:</th>
+                <td>
+                    <input id="profileAttribute_name" name="name" value="{{user.profile.name}}"/>
+                    {{{errors.name}}}
+                </td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td>
+                    <input id="profileAttribute_email" name="email" value="{{user.emails.0.address}}"/>
+                    {{{errors.email}}}
+                </td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td>
+                    <input id="profileAttribute_phone" name="phone" value="{{user.profile.phone}}"/>
+                    {{{errors.phone}}}
+                </td>
+            </tr>
+            <tr>
+                <th>Payment cycle:</th>
+                <td>
+                    <select id="profileAttribute_payment_cycle" name="payment_cycle">
+                        {{#each paymentCycleOptions}}
+                            <option value="{{value}}" {{#if selected}} selected="selected" {{/if}}>{{name}}</option>
+                        {{/each}}
+                    </select>
+                    {{{errors.payment_cycle}}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input id="save-profile-btn" class="customButton" type="button" value="Save profile"/>
+
+</template>

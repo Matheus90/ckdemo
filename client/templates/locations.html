@@ -11,12 +11,15 @@
         <tbody>
             {{#if locations array}}
                 {{#each locations}}
-                <tr id="{{id}}">
+                <tr>
                     <td>{{name}}</td>
                     <td>{{address}}</td>
-                    <td>{{kegerators}}</td>
                     <td>
-                        <div class="delete-btn customButton" id="{{id}}"> &times; </div>
+                        {{kegerators}} <br />
+                        <input type="button" class="addKegerator customButton" value="Add Kegerator"/>
+                    </td>
+                    <td>
+                        <div class="delete-btn customButton"> &times; </div>
                     </td>
                 </tr>
                 {{/each}}

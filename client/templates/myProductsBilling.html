@@ -1,0 +1,50 @@
+<template name="myProductsBilling">
+    <table class="items">
+        <thead>
+        <tr>
+            <th>Kegerator</th>
+            <th>Location</th>
+            <th>Interval</th>
+            <th>Amount</th>
+            <th>Paid</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#if bills}}
+            {{#each bills}}
+            <tr id="{{id}}">
+                <td>{{{kegerator.name type}}}</td>
+                <td> Flavors:
+                    {{#if flavor1}}
+                        {{{ flavorName flavor1}}},
+                    {{/if}}
+
+                    {{#if flavor2}}
+                        {{{ flavorName flavor2}}},
+                    {{/if}}
+
+                    {{#if flavor3}}
+                        {{{ flavorName flavor3}}}
+                    {{/if}}
+                </td>
+                <td>{{location_id}}</td>
+                <td>$155</td>
+                <td>
+                    {{#if paid}}
+                        <span style="color: green;">Yes</span>
+                    {{else}}
+                        <span style="color: orangered;">No</span>
+                    {{/if}}
+                </td>
+            </tr>
+            {{/each}}
+        {{else}}
+            <tr id="have-no-rows">
+                <td colspan="4">You have no bills yet.</td>
+            </tr>
+        {{/if}}
+        </tbody>
+    </table>
+
+
+</template>
