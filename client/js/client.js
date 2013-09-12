@@ -106,7 +106,8 @@ Template.profile.user = function(userId){
 Template.profile.paymentCycleOptions = function(){
     var options = App.paymentCycleOptions;
 
-    if( user = Meteor.user() ){
+    var user = Meteor.user();
+    if( user.profile ){
         for(i in options){
             options[i].selected = (options[i].value == user.profile.payment_cycle);
         }
