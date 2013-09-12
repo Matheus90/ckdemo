@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a003926-979b-4cf1-bef7-77b841224177" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Munka-James\ckdemo\client\app.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.css" afterPath="$PROJECT_DIR$/client/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/locations.html" afterPath="$PROJECT_DIR$/client/templates/locations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/products.html" afterPath="$PROJECT_DIR$/client/templates/products.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/sidebar.html" afterPath="$PROJECT_DIR$/client/templates/sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/client.js" afterPath="$PROJECT_DIR$/client/js/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/myProductsBilling.html" afterPath="$PROJECT_DIR$/client/templates/myProductsBilling.html" />
     </list>
     <ignored path="ckdemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +27,13 @@
     <file path="/page-products.html" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1378847856620" ignored="false" />
     <file path="/products.html" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1378921100358" ignored="false" />
     <file path="/page-billing.html" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1378850453773" ignored="false" />
-    <file path="/myProductsBilling.html" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1379026851126" ignored="false" />
+    <file path="/myProductsBilling.html" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1379027443452" ignored="false" />
     <file path="/page-profile.html" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1378920008147" ignored="false" />
     <file path="/profile.html" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1379024084515" ignored="false" />
-    <file path="/client.js" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1379027168172" ignored="false" />
+    <file path="/client.js" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1379027354367" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/programs/client/packages/accounts-password.js" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1379027274429" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/programs/server/packages/accounts-password.js" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1379027274429" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/programs/server/packages/email.js" changelist="3a003926-979b-4cf1-bef7-77b841224177" time="1379027274429" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="27" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.7419355">
+            <state line="84" column="9" selection-start="2446" selection-end="2446" vertical-scroll-proportion="-16.32">
               <folding />
             </state>
           </provider>
@@ -118,10 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myProductsBilling.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="myProductsBilling.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/myProductsBilling.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="27" selection-start="788" selection-end="788" vertical-scroll-proportion="-15.692307">
+            <state line="15" column="46" selection-start="408" selection-end="420" vertical-scroll-proportion="0.19391635">
               <folding>
                 <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#template#0;n#!!top" expanded="true" />
@@ -179,9 +177,9 @@
         <option value="$PROJECT_DIR$/client/app.js" />
         <option value="$PROJECT_DIR$/client/js/app.js" />
         <option value="$PROJECT_DIR$/client/client.js" />
-        <option value="$PROJECT_DIR$/client/templates/myProductsBilling.html" />
         <option value="$PROJECT_DIR$/client/index.css" />
         <option value="$PROJECT_DIR$/client/js/client.js" />
+        <option value="$PROJECT_DIR$/client/templates/myProductsBilling.html" />
       </list>
     </option>
   </component>
@@ -521,27 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/products.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="-7.8461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/pages/page-billing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="29" selection-start="126" selection-end="126" vertical-scroll-proportion="-3.2692308">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/myProductsBilling.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="788" selection-end="788" vertical-scroll-proportion="-15.692307">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,10 +540,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="27" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.7419355">
+        <state line="84" column="9" selection-start="2446" selection-end="2446" vertical-scroll-proportion="-16.32">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/myProductsBilling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="408" selection-end="420" vertical-scroll-proportion="0.19391635">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

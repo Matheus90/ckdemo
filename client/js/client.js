@@ -77,6 +77,15 @@ Template.myProductsBilling.flavorName = function(flavorId){
         return 'Unknown';
 
 };
+Template.myProductsBilling.getAddress = function(locationId){
+    var location = Locations.findOne(locationId);
+    if( location ){
+        //return '<span class="white-text-shadow" style="color:'+flavor.color+';">'++'</span>';
+        return location.address;
+    }else
+        return 'Unknown';
+
+};
 
 Template.myProductsBilling.getKegerator = function(type){
     var keg = App.getKegerator(type);

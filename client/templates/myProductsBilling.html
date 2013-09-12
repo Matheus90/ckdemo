@@ -13,7 +13,7 @@
         {{#if bills}}
             {{#each bills}}
             <tr id="{{id}}">
-                <td>{{{kegerator.name type}}}</td>
+                <td>{{{kegerator.name type}}} (sample row)</td>
                 <td> Flavors:
                     {{#if flavor1}}
                         {{{ flavorName flavor1}}},
@@ -27,7 +27,7 @@
                         {{{ flavorName flavor3}}}
                     {{/if}}
                 </td>
-                <td>{{location_id}}</td>
+                <td>{{{getAddress location_id}}}</td>
                 <td>$155</td>
                 <td>
                     {{#if paid}}
